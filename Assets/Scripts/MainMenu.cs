@@ -7,4 +7,30 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void SceneOne()
+    {
+        SceneManager.LoadScene("SceneOne");
+    }
+    
+    public void SceneTwo()
+    {
+        SceneManager.LoadScene("SceneTwo");
+    }
+    
+    public void SceneThree()
+    {
+        SceneManager.LoadScene("SceneThree");
+    }
+    
+    public void SceneFour()
+    {
+        SceneManager.LoadScene("SceneFour");
+    }
+    
+    public void SceneFive()
+    {
+        SceneManager.LoadScene("SceneFive");
+    }
+
 }
