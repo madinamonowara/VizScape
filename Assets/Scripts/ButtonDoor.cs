@@ -3,29 +3,67 @@ using System.Collections;
 
 public class ButtonDoor : MonoBehaviour
 {
-    public int totalButtonPressed = 0;
     public Animator doorAnimator;
+    public bool butDoors = false;
+    public bool butBlocks = false;
+    public bool butLadder = false;   
 
-    public void Start()
+    public void buttonBehindDoors()
     {
-        //doorAnimator = door.GetComponent<Animator>();
-        Debug.Log(doorAnimator);
+        if(!butDoors)
+        {
+            butDoors = true;
+        } else { 
+            // play sound to show that button does nothing now
+        }
+
+        checkAllClicked();
     }
-    
-    public void incrementPressed()
-    {
-        totalButtonPressed++;
 
-        checkButtonPressed();
+    public void buttonLadder()
+    {
+        if (!butLadder)
+        {
+            butLadder = true;
+        }
+        else
+        {
+            // play sound to show that button does nothing now
+        }
+
+        checkAllClicked();
     }
 
-    public void checkButtonPressed()
+    public void buttonSurroundBlocks()
     {
-        if(totalButtonPressed == 1)
+        if (!butBlocks)
+        {
+            butBlocks = true;
+        }
+        else
+        {
+            // play sound to show that button does nothing now
+        }
+
+        checkAllClicked();
+    }
+
+    private void checkAllClicked()
+    {
+        if(butLadder && butBlocks && butDoors)
         {
             doorAnimator.Play("DoorOpen", 0, 0.0f);
-            Debug.Log("Button has been pressed.");
+            Debug.Log("Door has been opened.");
         }
     }
+
+    //public void checkButtonPressed()
+    //{
+    //    if(totalButtonPressed == 1)
+    //    {
+    //        doorAnimator.Play("DoorOpen", 0, 0.0f);
+    //        Debug.Log("Button has been pressed.");
+    //    }
+    //}
 
 }
