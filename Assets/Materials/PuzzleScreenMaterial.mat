@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FuseMaterial_Yellow
+  m_Name: PuzzleScreenMaterial
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -116,13 +116,13 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.9372549, b: 0.2, a: 1}
-    - _Color: {r: 1, g: 0.9372549, b: 0.19999996, a: 1}
-    - _EmissionColor: {r: 1, g: 0.9372549, b: 0.2, a: 1}
+    - _BaseColor: {r: 0.18182793, g: 0.06474723, b: 0.9150943, a: 1}
+    - _Color: {r: 0.1818279, g: 0.06474721, b: 0.9150943, a: 1}
+    - _EmissionColor: {r: 1, g: 0.26666668, b: 0.73333335, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &3801273519699021460
+--- !u!114 &5649618219481759445
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
