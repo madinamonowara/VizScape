@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
 
     public void SceneOne()
     {
-        SceneManager.LoadScene("SceneOne");
+        SceneManager.LoadScene("Gavin");
     }
     
     public void SceneTwo()
