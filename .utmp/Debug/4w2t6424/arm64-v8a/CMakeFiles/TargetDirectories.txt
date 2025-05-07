@@ -1,0 +1,5 @@
+C:/Users/Gavin/Documents/VSCode/VizScape/.utmp/Debug/4w2t6424/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/Gavin/Documents/VSCode/VizScape/.utmp/Debug/4w2t6424/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/Gavin/Documents/VSCode/VizScape/.utmp/Debug/4w2t6424/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/Gavin/Documents/VSCode/VizScape/.utmp/Debug/4w2t6424/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/Gavin/Documents/VSCode/VizScape/.utmp/Debug/4w2t6424/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
