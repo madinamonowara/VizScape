@@ -15,22 +15,22 @@ public class MainMenu : MonoBehaviour
     
     public void SceneTwo()
     {
-        SceneManager.LoadScene("SceneTwo");
+        SceneManager.LoadScene("Madina");
     }
     
     public void SceneThree()
     {
-        SceneManager.LoadScene("SceneThree");
+        SceneManager.LoadScene("James");
     }
     
     public void SceneFour()
     {
-        SceneManager.LoadScene("SceneFour");
+        SceneManager.LoadScene("Shenghao");
     }
     
     public void SceneFive()
     {
-        SceneManager.LoadScene("SceneFive");
+        SceneManager.LoadScene("Derek");
     }
 
 }

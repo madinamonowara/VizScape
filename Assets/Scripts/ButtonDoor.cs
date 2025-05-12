@@ -158,6 +158,5 @@ public class ButtonDoor : MonoBehaviour
             speaker.Stop();
             speaker.Speak("Hey! You found me. Take this teleporter onto the next student's scene!");
         }
-    
     }
 }
