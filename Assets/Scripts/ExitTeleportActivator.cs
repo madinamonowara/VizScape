@@ -4,7 +4,10 @@ public class ExitTeleportActivator : MonoBehaviour
 {
     public GameObject lockIndicatorLeft;
     public GameObject lockIndicatorRight;
-    public GameObject teleportAnchor;
+    public GameObject wall1;
+    public GameObject wall2;
+    public GameObject wall3;
+    public GameObject door;
 
     private bool activated = false;
 
@@ -18,8 +21,10 @@ public class ExitTeleportActivator : MonoBehaviour
             if (IsGreen(leftColor) && IsGreen(rightColor))
             {
                 activated = true;
-                teleportAnchor.SetActive(true);
-                Debug.Log("Exit teleport activated.");
+                wall1.SetActive(true);
+                wall2.SetActive(true);
+                wall3.SetActive(false);
+                door.SetActive(false);
             }
         }
     }
