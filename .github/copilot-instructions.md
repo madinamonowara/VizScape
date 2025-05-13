@@ -4,11 +4,11 @@
 - Active scene:
   - Name: TestScene
   - Tags:
-    - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController, Destructible
+    - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController, Destructible, enemyFloor, wall, button, cannon
   - Layers:
-    - Default, TransparentFX, Ignore Raycast, Water, UI
+    - Default, TransparentFX, Ignore Raycast, enemyFloor, Water, UI
 - Active game object:
-  - Name: Quad
+  - Name: SussyImposter
   - Tag: Untagged
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
