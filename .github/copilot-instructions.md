@@ -8,7 +8,7 @@
   - Layers:
     - Default, TransparentFX, Ignore Raycast, enemyFloor, Water, UI
 - Active game object:
-  - Name: SussyImposter
-  - Tag: Untagged
-  - Layer: Default
+  - Name: XR Origin (XR Rig)
+  - Tag: Player
+  - Layer: Ignore Raycast
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

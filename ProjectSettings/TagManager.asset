@@ -5,11 +5,15 @@ TagManager:
   serializedVersion: 3
   tags:
   - Destructible
+  - enemyFloor
+  - wall
+  - button
+  - cannon
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - enemyFloor
   - Water
   - UI
   - 
