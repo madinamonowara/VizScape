@@ -8,14 +8,14 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 public class CannonButton : MonoBehaviour
 {
 
-
+    bool canShoot = true;
     public Transform bulletSpawn;
     public GameObject bulletPrefab;
-    public float bulletSpeed = 15;
+    public float bulletSpeed = 10;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        InvokeRepeating("allowedToMove", 1f, 5f);
     }
 
     // Update is called once per frame
@@ -31,7 +31,14 @@ public class CannonButton : MonoBehaviour
     }
 
     void shootCannon(){
-        var bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
-        bullet.GetComponent<Rigidbody>().linearVelocity = bulletSpawn.forward * bulletSpeed;
+        if(canShoot == true){
+            var bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+            bullet.GetComponent<Rigidbody>().linearVelocity = -bulletSpawn.forward * bulletSpeed;
+            canShoot = false;
+        } 
+    }
+
+    void allowedToMove(){
+        canShoot = true;
     }
 }
