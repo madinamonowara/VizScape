@@ -9,6 +9,9 @@ TagManager:
   - wall
   - button
   - cannon
+  - leftbutton
+  - rightbutton
+  - enemy
   layers:
   - Default
   - TransparentFX
