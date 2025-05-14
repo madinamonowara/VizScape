@@ -6,9 +6,8 @@ using System.IO;
 
 public class VoiceGuide : MonoBehaviour
 {
-    [SerializeField] private string elevenLabsApiKey = "YOUR_API_KEY"; // Replace with your actual API key
-    [SerializeField] private string voiceId = "JBFqnCBsd6RMkjVDRZzb"; // Example voice ID
-    [SerializeField] private string modelId = "eleven_multilingual_v2"; // Example model ID
+    [SerializeField] private string elevenLabsApiKey = "sk_d63dcfd3580dc16e854207ed7828149ed0580fe5f45d30ba"; 
+    [SerializeField] private string modelId = "eleven_multilingual_v2"; 
     [SerializeField] private AudioSource audioSource;
 
     private const string apiUrl = "https://api.elevenlabs.io/v1/text-to-speech/";
