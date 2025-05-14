@@ -6,8 +6,9 @@ using System.IO;
 
 public class VoiceGuide : MonoBehaviour
 {
-    [SerializeField] private string elevenLabsApiKey = "sk_d63dcfd3580dc16e854207ed7828149ed0580fe5f45d30ba"; 
-    [SerializeField] private string modelId = "eleven_multilingual_v2"; 
+    [SerializeField] private string elevenLabsApiKey = "sk_d63dcfd3580dc16e854207ed7828149ed0580fe5f45d30ba";
+    [SerializeField] private string voiceId = "JBFqnCBsd6RMkjVDRZzb";
+    [SerializeField] private string modelId = "eleven_multilingual_v2";
     [SerializeField] private AudioSource audioSource;
 
     private const string apiUrl = "https://api.elevenlabs.io/v1/text-to-speech/";
@@ -32,7 +33,7 @@ public class VoiceGuide : MonoBehaviour
         using (UnityWebRequest www = new UnityWebRequest(url, UnityWebRequest.kHttpVerbPOST))
         {
             www.uploadHandler = new UploadHandlerRaw(postData);
-            www.downloadHandler = new DownloadHandlerAudioClip(url, AudioType.MPEG); // Default, might need adjustment
+            www.downloadHandler = new DownloadHandlerAudioClip(url, AudioType.MPEG);
             www.SetRequestHeader("xi-api-key", elevenLabsApiKey);
             www.SetRequestHeader("Content-Type", "application/json");
 
