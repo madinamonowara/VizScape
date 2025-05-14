@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class TargetSphere : MonoBehaviour
 {
+    public VoiceGuide voiceGuide; 
     public bool hasBeenHit = false;
     public Material regularMaterial;
     public Material hitMaterial;
@@ -19,7 +20,12 @@ public class TargetSphere : MonoBehaviour
         {
             hasBeenHit = true;
             rend.material = hitMaterial;
-            // AudioManager.instance.PlaySFX("TargetHit"); // Removed the audio line
+
+            if (voiceGuide != null)
+            {
+                voiceGuide.Speak("Nice hit!");
+            }
+
             BaseballManager.instance.TargetHit();
         }
     }

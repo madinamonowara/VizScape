@@ -6,6 +6,7 @@ using TMPro;
 public class BaseballManager : MonoBehaviour
 {
     public static BaseballManager instance;
+    public VoiceGuide voiceGuide;
 
     [Header("Target Spheres (Baseballs to Hit)")]
     public GameObject[] targetSpheres;
@@ -14,7 +15,6 @@ public class BaseballManager : MonoBehaviour
     public GameObject[] collectableSpheres;
 
     [Header("UI")]
-    //public Text statusText;
     public TMPro.TextMeshProUGUI statusText;
 
     private int targetsHit = 0;
@@ -35,6 +35,11 @@ public class BaseballManager : MonoBehaviour
 
         DisableCollectableSpheres();
         UpdateUI();
+
+        if (voiceGuide != null)
+        {
+            voiceGuide.Speak("Welcome to the mini baseball game! Hit all the targets and then place the collectible spheres on the platform.");
+        }
     }
 
     public void TargetHit()
@@ -44,9 +49,20 @@ public class BaseballManager : MonoBehaviour
             targetsHit++;
             UpdateUI();
 
+
+            if (voiceGuide != null)
+            {
+                voiceGuide.Speak($"You have {targetSpheres.Length - targetsHit} targets remaining.");
+            }
+
             if (targetsHit >= targetSpheres.Length)
             {
                 UnlockCollectableSpheres();
+                
+                if (voiceGuide != null)
+                {
+                    voiceGuide.Speak("All targets hit! Now collect the spheres and place them on the platform.");
+                }
             }
         }
     }
